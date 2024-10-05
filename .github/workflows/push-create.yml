@@ -38,4 +38,4 @@ jobs:
      run: sleep 180
 
    - name: Terraform Destroy
-     run: terraform destroy -no-color -auto-approve --var lambda_function_name=${{ env.lambda_function_name }}
+     run: terraform destroy -no-color -auto-approve --var lambda_function_name=${{ vars.LAMBDA_FUNCTION_NAME }}
